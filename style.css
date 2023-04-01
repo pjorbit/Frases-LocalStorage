@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    border: 1px solid black;
+    border-radius: 24px;
+    height: 800px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container_piada {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+}
+
+#piada_titulo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#piada_titulo p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.my-icon {
+    font-size: 30px;
+    color: #494949;
+}
+
+#piada_texto {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+#container_add-piada {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#add_piada-input {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 6;
+    padding-right: 10px;
+    
+}
+
+#piada-input {
+    height: 70%;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #595959;
+}
+
+#add_piada-btn {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+#container_lista-piadas {
+    display: flex;
+    flex: 3;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#lista-piadas {
+    list-style-type: none;
+}
