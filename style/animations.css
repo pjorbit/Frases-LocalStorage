@@ -153,7 +153,7 @@
     box-shadow: 40vmin 0 5.574669276453111vmin currentColor;
 }
 .background span:nth-child(14) {
-    color: #E45A84;
+    color: #f9f9f9;
     top: 64%;
     left: 75%;
     animation-duration: 29s;
@@ -180,7 +180,7 @@
     box-shadow: -40vmin 0 5.630845583478016vmin currentColor;
 }
 .background span:nth-child(17) {
-    color: #E45A84;
+    color: #393939;
     top: 95%;
     left: 76%;
     animation-duration: 22s;
@@ -198,7 +198,7 @@
     box-shadow: -40vmin 0 5.49694669616856vmin currentColor;
 }
 .background span:nth-child(19) {
-    color: #E45A84;
+    color: #fff;
     top: 7%;
     left: 96%;
     animation-duration: 36s;
