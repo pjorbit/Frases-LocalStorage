@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(168,237,234);
+    background: linear-gradient(135deg, rgba(168,237,234,1) 0%, rgba(254,214,227,1) 100%);
+    overflow: hidden;
+}
+
+#container {
+    border-radius: 24px;
+    height: 800px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #b490ca47;
+    backdrop-filter: blur(5px);
+}
+
+#container-image {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+#img-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 30px 50px;
+}
+
+#img-div img {
+    height: 80%;
+    filter: drop-shadow(5px 5px 10px #fed6e3d6);
+}
+
+#container_frases {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+}
+
+#container_frase-card {
+    background-color: transparent;
+    height: 230px;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#icon-refresh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    padding: 10px 15px ;
+}
+
+#change_frase-btn {
+    transition: ease-in 0.4s;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+#change_frase-btn:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.my-icon {
+    font-size: 30px;
+    color: #393939;
+}
+
+#card-texto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#card-texto p {
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #393939;
+}
+
+#card_autor {
+    align-self: flex-end;
+    margin: 5px 30px 0 0;
+}
+
+#card_autor p {
+    color: #393939;
+    font-size: 15px;
+}
+
+#container_add-frase {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    width: 90%;
+    margin-top: 30px;
+}
+
+#add_frase_titulo {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#frases-mostrar p, #add_frase_titulo p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #393939;
+}
+
+#frase-input {
+    height: 50px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #393939;
+    color: #f9f9f9;
+}
+
+input::placeholder {
+    color: #f9f9f9;
+}
+
+#add_frase-btn {
+    display: flex;
+    align-self: center;
+}
+
+#btn_add {
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.my-icon-add {
+    font-size: 50px;
+    color: #393939;
+    transition: ease-in 0.3s;
+}
+
+.my-icon-add:hover {
+    color: #f9f9f9;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#container_lista-frases {
+    margin-top: 30px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#frases-mostrar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#frases-mostrar button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.show-frases {
+    font-size: 22px;
+}
+
+#frases_lista-ul {
+    list-style-type: none;
+    display: none;
+}
+

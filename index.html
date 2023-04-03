@@ -4,39 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/animations.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
 <body>
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <div id="container">
-        <div id="container_piada">
-            <div id="piada_titulo">
-                <p>Título da piadoca</p>
-                <i class="fa-solid fa-rotate my-icon"></i>
+        <div id="container-image">
+            <div id="img-div">
+                <img src="src/pngwing.com (2).png" alt="greek status david">
             </div>
-            <div id="piada_texto">
-                <p><span>Texto da piadoca lksjaldfjalsdfjklafd</span></p>
+        </div>
+        <div id="container_frases">
+            <div id="container_frase-card">
+                <div id="icon-refresh">
+                    <button id="change_frase-btn">
+                        <i class="fa-solid fa-rotate my-icon" id="mudar-piada"></i>
+                    </button>
+                </div>
+                <div id="card-texto">
+                    <p>"A maior riqueza é viver contente com pouco"</p>
+                </div>
+                <div id="card_autor">
+                    <p>- Platão de Tívoli (427 a.C. - 347 a.C.)</p>
+                </div>
+            </div>
+
+            <div id="container_add-frase">
+                <div id="add_frase_titulo">
+                    <p>Adicione sua própria frase</p>
+                </div>
+                <div id="add_frase-input">
+                    <input type="text" id="frase-input" placeholder="Sua frase..">
+                </div>
+                <div id="add_frase-input">
+                    <input type="text" id="frase-input" placeholder="O(A) autor(a)..">
+                </div>
+                <div id="add_frase-input">
+                    <input type="text" id="frase-input" placeholder="O ano..">
+                </div>
+                <div id="add_frase-btn">
+                    <button id="btn_add">
+                        <i class="fa-solid fa-circle-plus my-icon-add"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="container_lista-frases">
+                <div id="frases-mostrar">
+                    <p>Sua lista de frases</p>
+                    <button><i class="fa-solid fa-caret-right show-frases"></i></button>
+                </div>
+                <div id="frases-lista">
+                    <ul id="frases_lista-ul">
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div id="container_add-piada">
-            <div id="add_piada-input">
-                <input type="text" id="piada-input" placeholder="Escreva sua piada aqui..">
-            </div>
-            <div id="add_piada-btn">
-                <i class="fa-solid fa-circle-plus my-icon"></i>
-            </div>
-        </div>
-
-        <div id="container_lista-piadas">
-            <ul id="lista-piadas">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus, vero delectus eos, rem fugiat nostrum commodi doloremque voluptas.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat laboriosam, itaque ea pariatur corporis dolor neque, fuga magnam necessitatibus praesentium molestias aliquam.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime praesentium nobis accusamus suscipit quam alias id impedit dolorem exercitationem ut omnis, blanditiis consequatur!</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At accusantium aliquid necessitatibus harum iure aliquam ipsa iusto obcaecati eos.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vitae iste beatae temporibus quidem obcaecati fuga aperiam doloremque libero vero, deleniti amet at laborum. Eos, aperiam. Ipsum nisi officiis ullam!</li>
-            </ul>
-        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
