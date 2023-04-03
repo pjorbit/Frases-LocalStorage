@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/animations.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="src/landmark-solid.svg" type="image/x-icon">
-    <title>Document</title>
+    <title>Frases LocalStorage</title>
 </head>
 <body>
 
@@ -31,15 +31,15 @@
         <div id="container_frases">
             <div id="container_frase-card">
                 <div id="icon-refresh">
-                    <button id="change_frase-btn">
+                    <button id="change_frase-btn" onclick="mudarCardAleatorio()">
                         <i class="fa-solid fa-rotate my-icon" id="mudar-piada"></i>
                     </button>
                 </div>
                 <div id="card-texto">
-                    <p>"A maior riqueza é viver contente com pouco"</p>
+                    <p id="fraseAleatoria">"A maior riqueza é viver contente com pouco"</p>
                 </div>
                 <div id="card_autor">
-                    <p>- Platão de Tívoli (427 a.C. - 347 a.C.)</p>
+                    <p id="autoAnoAleatorio">- Platão de Tívoli (427 a.C. - 347 a.C.)</p>
                 </div>
             </div>
 
@@ -47,14 +47,29 @@
                 <div id="add_frase_titulo">
                     <p>Adicione sua própria frase</p>
                 </div>
-                <div id="add_frase-input">
-                    <input type="text" id="frase-input" placeholder="Sua frase..">
+                <div class="add_frase-input">
+                    <input type="text" class="frase-input" placeholder="Sua frase..">
                 </div>
-                <div id="add_frase-input">
-                    <input type="text" id="frase-input" placeholder="O(A) autor(a)..">
+                <div class="add_frase-input">
+                    <input type="text" class="frase-input" placeholder="O(A) autor(a)..">
                 </div>
-                <div id="add_frase-input">
-                    <input type="text" id="frase-input" placeholder="O ano..">
+                <div id="add_ano-input">
+                    <div class="ano_nascimento">
+                        <input type="text" class="ano-input" placeholder="Ano de nascimento..">
+                        <select name="nascimentoOpcoes" id="" class="menuSelect">
+                            <option value="" style="display:none;"></option>
+                            <option value="a.C">a.C</option>
+                            <option value="d.C">d.C</option>
+                        </select>
+                    </div>
+                    <div class="ano_nascimento">
+                        <input type="text" class="ano-input" placeholder="Ano de falecimento..">
+                        <select name="nascimentoOpcoes" id="" class="menuSelect">
+                            <option value="" style="display:none;"></option>
+                            <option value="a.C">a.C</option>
+                            <option value="d.C">d.C</option>
+                        </select>
+                    </div>
                 </div>
                 <div id="add_frase-btn">
                     <button id="btn_add">

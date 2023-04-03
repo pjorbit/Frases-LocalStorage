@@ -92,7 +92,7 @@ body {
 
 .my-icon {
     font-size: 30px;
-    color: #393939;
+    color: #f9f9f9;
 }
 
 #card-texto {
@@ -142,20 +142,63 @@ body {
     color: #393939;
 }
 
-#frase-input {
+.frase-input {
     height: 50px;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     padding-left: 10px;
     border-radius: 15px;
     border: none;
-    background-color: #393939;
-    color: #f9f9f9;
+    background-color: #f9f9f9;
+    color: #393939;
 }
 
 input::placeholder {
-    color: #f9f9f9;
+    color: #393939;
 }
+
+#add_ano-input {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ano_nascimento {
+    height: 100%;
+    width: 45%;
+}
+
+.ano-input {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #f9f9f9;
+    color: #393939;
+}
+
+.menuSelect {
+    height: 100%;
+    width: 8%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    border: none;
+    background-color: #f9f9f9;
+    color: #393939;
+}
+
+.menuSelect:hover {
+    cursor: pointer;
+}
+
+.menuSelect option {
+    background-color: #f9f9f9;
+    color: #393939;
+    font-size: 18px;
+}
+
 
 #add_frase-btn {
     display: flex;
@@ -200,6 +243,10 @@ input::placeholder {
     background: none;
     box-shadow: none;
     outline: none;
+}
+
+#frases-mostrar button:hover {
+    cursor: pointer;
 }
 
 .show-frases {
