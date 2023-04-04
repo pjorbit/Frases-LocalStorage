@@ -48,31 +48,31 @@
                     <p>Adicione sua própria frase</p>
                 </div>
                 <div class="add_frase-input">
-                    <input type="text" class="frase-input" placeholder="Sua frase..">
+                    <input type="text" class="frase-input" id="objFrase" placeholder="Sua frase.." required>
                 </div>
                 <div class="add_frase-input">
-                    <input type="text" class="frase-input" placeholder="O(A) autor(a)..">
+                    <input type="text" class="frase-input" id="objAutor" placeholder="O(A) autor(a).." required>
                 </div>
                 <div id="add_ano-input">
                     <div class="ano_nascimento">
-                        <input type="text" class="ano-input" placeholder="Ano de nascimento..">
-                        <select name="nascimentoOpcoes" id="" class="menuSelect">
+                        <input type="text" class="ano-input" id="objAnoNascimento" placeholder="Ano de nascimento.." required>
+                        <select name="nascimentoOpcoes" id="objAnoAc" class="menuSelect" required>
                             <option value="" style="display:none;"></option>
-                            <option value="a.C">a.C</option>
-                            <option value="d.C">d.C</option>
+                            <option value="a.C.">a.C</option>
+                            <option value="d.C.">d.C</option>
                         </select>
                     </div>
                     <div class="ano_nascimento">
-                        <input type="text" class="ano-input" placeholder="Ano de falecimento..">
-                        <select name="nascimentoOpcoes" id="" class="menuSelect">
+                        <input type="text" class="ano-input" id="objAnoFalecimento" placeholder="Ano de falecimento.." required>
+                        <select name="nascimentoOpcoes" id="objAnoDc" class="menuSelect" required>
                             <option value="" style="display:none;"></option>
-                            <option value="a.C">a.C</option>
-                            <option value="d.C">d.C</option>
+                            <option value="a.C.">a.C</option>
+                            <option value="d.C.">d.C</option>
                         </select>
                     </div>
                 </div>
                 <div id="add_frase-btn">
-                    <button id="btn_add">
+                    <button id="btn_add" onclick="criarObjetoCard()">
                         <i class="fa-solid fa-circle-plus my-icon-add"></i>
                     </button>
                 </div>
@@ -81,11 +81,12 @@
             <div id="container_lista-frases">
                 <div id="frases-mostrar">
                     <p>Sua lista de frases</p>
-                    <button><i class="fa-solid fa-caret-right show-frases"></i></button>
+                    <button onclick="mostrarLista()" id="btnAbrirLista">
+                        <i class="fa-solid fa-caret-right show-frases"></i>
+                    </button>
                 </div>
                 <div id="frases-lista">
-                    <ul id="frases_lista-ul">
-                    </ul>
+                    <ul id="frases_lista-ul"></ul>
                 </div>
             </div>
         </div>

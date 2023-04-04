@@ -21,6 +21,7 @@ body {
 #container {
     border-radius: 24px;
     height: 800px;
+    max-height: 1000px;
     width: 1100px;
     display: flex;
     align-items: center;
@@ -51,11 +52,26 @@ body {
 
 #container_frases {
     width: 100%;
-    height: 100%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 2;
+    overflow-y: auto;
+}
+
+#container_frases::-webkit-scrollbar {
+    width: 5px;
+}
+  
+#container_frases::-webkit-scrollbar-track {
+    background: #f9f9f9;
+    border-radius: 5px
+}
+
+#container_frases::-webkit-scrollbar-thumb {
+    background: #393939;
+    border-radius: 5px
 }
 
 #container_frase-card {
@@ -255,6 +271,18 @@ input::placeholder {
 
 #frases_lista-ul {
     list-style-type: none;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
+#frases_lista-ul li {
+    border: 1px solid #f9f9f9;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+#frases_lista-ul li p{
+    color: #393939;
+}
