@@ -259,6 +259,7 @@ input::placeholder {
     background: none;
     box-shadow: none;
     outline: none;
+    color: #393939;
 }
 
 #frases-mostrar button:hover {
