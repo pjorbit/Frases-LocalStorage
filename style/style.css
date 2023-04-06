@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*REGRAS GERAIS*/
+
 * {
     margin: 0;
     padding: 0;
@@ -22,13 +24,15 @@ body {
     border-radius: 24px;
     height: 800px;
     max-height: 1000px;
-    width: 1100px;
+    width: min(100% - 50px, 1100px);
     display: flex;
     align-items: center;
     flex-direction: row;
     background-color: #b490ca47;
     backdrop-filter: blur(5px);
 }
+
+/* IMAGEM */
 
 #container-image {
     display: flex;
@@ -49,6 +53,8 @@ body {
     height: 80%;
     filter: drop-shadow(5px 5px 10px #fed6e3d6);
 }
+
+/* FRASES */
 
 #container_frases {
     width: 100%;
@@ -285,4 +291,55 @@ input::placeholder {
 
 #frases_lista-ul li p{
     color: #393939;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1030px) {
+    
+    #container-image {
+        height: 80%;
+    }
+
+    #add_ano-input {
+        flex-direction: column;
+    }
+
+    .ano_nascimento {
+        width: 100%;
+    }
+    
+    .ano-input {
+        height: 4em;
+        width: min(94%-10px);
+    }
+
+    .menuSelect {
+        height: 4em;
+        width: 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    #container {
+        flex-direction: column;
+    }
+
+    #container-image {
+        height: 50%;
+        width: 100%;
+        box-shadow: 0px 10px 50px -30px #393939ad;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .menuSelect {
+        width: min(5%, 20px);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .menuSelect {
+        width: 20px;
+    }
 }
