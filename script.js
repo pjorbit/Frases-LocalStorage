@@ -32,6 +32,8 @@ let arrayFrases = [
     }
 ]
 
+atualizarLocalStorage();
+
 //Acessa um objeto aleatório presente no localStorage
 function gerarFraseAleatoria() {
 
