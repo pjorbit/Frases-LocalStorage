@@ -22,8 +22,7 @@ body {
 
 #container {
     border-radius: 24px;
-    height: 800px;
-    max-height: 1000px;
+    height: min(100% - 50px, 900px);
     width: min(100% - 50px, 1100px);
     display: flex;
     align-items: center;
